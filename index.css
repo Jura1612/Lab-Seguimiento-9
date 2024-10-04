@@ -1,0 +1,91 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .browser-bar {
+            display: flex;
+            align-items: center;
+            background-color: #f1f1f1;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+        .browser-bar span {
+            margin-left: 10px;
+        }
+        .browser-bar input {
+            flex-grow: 1;
+            margin: 0 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .chat-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+        .message {
+            max-width: 60%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 10px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+        .message.user1 {
+            background-color: #add8e6;
+            align-self: flex-start;
+            color: #000;
+        }
+        .message.user2 {
+            background-color: #f4cccc;
+            align-self: flex-end;
+            color: #000;
+        }
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+        .input-container div {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            flex-grow: 1;
+            margin: 0 5px;
+        }
+        .input-container input[type="text"] {
+            border: none;
+            outline: none;
+            flex-grow: 1;
+            padding: 5px;
+        }
+        .input-container button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .input-container button.user2 {
+            background-color: #ff6f61;
+        }
+        .input-container i {
+            margin-right: 5px;
+        }
